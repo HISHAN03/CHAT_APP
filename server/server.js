@@ -21,15 +21,14 @@ app.use(cookieParser());
 //app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
 
 
-const corsOptions = {
-  credentials: true,
-  origin: ["https://chat-app-hishan03.vercel.app", "https://chat-4778gwoiq-hishan03.vercel.app/"],
-  allowedHeaders: "*",
-};
+// const corsOptions = {
+//   credentials: true,
+//   origin: ["https://chat-app-hishan03.vercel.app", "https://chat-4778gwoiq-hishan03.vercel.app/"],
+//   allowedHeaders: "*",
+// };
 
-app.use(cors(corsOptions));
-
-app.use(cors(corsOptions));
+// app.use(cors(corsOptions));
+app.use(cors());
 
 app.get("/profile", (req, res) => {
   const token = req.cookies?.token;
