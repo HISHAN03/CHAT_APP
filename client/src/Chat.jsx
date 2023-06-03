@@ -70,7 +70,7 @@ export default function Chat()
         setUsername(null);
       });
     }
-
+jwt
     function handleMessage(ev) {
       const messageData = JSON.parse(ev.data);
       console.log({ev,messageData});

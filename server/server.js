@@ -18,7 +18,14 @@ mongoose.connect(process.env.MONGO_URL).then(() => { console.log("mongodb-connec
 app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+//app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
+app.use(
+  cors({
+    credentials: true,
+    origin: ["https://chat-app-hishan03.vercel.app", "http://localhost:5173"],
+  })
+);
+
 
 app.get("/profile", (req, res) => {
   const token = req.cookies?.token;
