@@ -4,7 +4,10 @@ import Routes from "./Router.jsx";
 import React from "react";
 
 function App() {
-  axios.defaults.baseURL = 'http://localhost:3000';
+  const isProduction = process.env.NODE_ENV === "production";
+  axios.defaults.baseURL = isProduction
+    ? "https://chat-server-m0w2.onrender.com"
+    : "http://localhost:3000";
   axios.defaults.withCredentials = true;
   return (
     <UserContextProvider>
