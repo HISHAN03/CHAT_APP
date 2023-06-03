@@ -24,7 +24,8 @@ app.use(cookieParser());
 
 const corsOptions = {
   credentials: true,
-  origin: ["https://chat-app-git-main-hishan03.vercel.app/", "http://localhost:5173"],
+  origin: ["https://chat-app-hishan03.vercel.app", "http://localhost:5173"],
+  allowedHeaders: ["Content-Type", "Authorization", "https://chat-server-m0w2.onrender.com/*"],
 };
 
 app.use(cors(corsOptions));
