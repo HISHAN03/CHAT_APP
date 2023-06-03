@@ -20,12 +20,14 @@ app.use(express.json());
 app.use(cookieParser());
 //app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
 
-
 const corsOptions = {
   credentials: true,
-  origin: ["https://chat-app-hishan03.vercel.app", "https://chat-4778gwoiq-hishan03.vercel.app/","https://adorable-dodol-b60c24.netlify.app"],
-  allowedHeaders: "*",
+  origin: ["https://chat-app-hishan03.vercel.app", "https://chat-4778gwoiq-hishan03.vercel.app/", "https://adorable-dodol-b60c24.netlify.app"],
+  allowedHeaders: ["Content-Type"], // Add "Content-Type" to the allowed headers
 };
+
+app.use(cors(corsOptions));
+
 
 app.use(cors(corsOptions));
 
