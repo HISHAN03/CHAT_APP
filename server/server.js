@@ -19,13 +19,12 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.json());
 app.use(cookieParser());
 //app.use(cors({ credentials: true, origin: process.env.CLIENT_URL || "http://localhost:5173" }));
-app.use(
-  cors({
-    credentials: true,
-    origin: ["https://chat-app-hishan03.vercel.app", "http://localhost:5173"],
-  })
-);
+const corsOptions = {
+  origin: ["https://chat-app-hishan03.vercel.app"],
+  credentials: true,
+};
 
+app.use(cors(corsOptions));
 
 app.get("/profile", (req, res) => {
   const token = req.cookies?.token;
