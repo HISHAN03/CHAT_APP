@@ -12,6 +12,10 @@ Clone the repository and follow the steps below to get started.🚀💬📂
 
 ## Installation 🛠️
 
+- ⚠️The projected which is deployed online does not contain file sharing feature⚠️ 
+- ⚠️to use file sharing feature u have to install locally and uncomment some part mentioned near the code⚠️
+
+
 To run ChatApp on your local machine, follow these steps:
 
 1. Clone the repository:
