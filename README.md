@@ -1,7 +1,7 @@
 # ChatApp 💬💻
 
 ChatApp is a delightful chat application developed using the MERN stack, allowing users to send text messages and share files seamlessly. 
-Please note that this app is not deployed online and can be experienced by installing it locally.
+this app can be accessed online or by installing it locally.
 Clone the repository and follow the steps below to get started.🚀💬📂
 
 ## Features ✨🚀
