@@ -21,7 +21,7 @@ To run ChatApp on your local machine, follow these steps:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ChatApp.git
+   git clone https://github.com/HISHAN03/ChatApp.git
    ```
 2.Navigate to the project directory: open two terminals one for server and other for client 
    ```bash
